@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Cabin", sans-serif;
+  font-family: "Gabarito", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#header nav img {
+  height: 70px;
+}
+
+#header nav {
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8vw;
+  gap: 30px;
+  /* background-color: rgb(255, 0, 89); */
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+#header nav a {
+  text-transform: uppercase;
+  font-size: 14.4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  background-color: black;
+  background-blend-mode: darken;
+  z-index: -99;
+}
+#hero {
+  position: relative;
+  position: relative;
+  background: rgba(0, 0, 0, 0.47);
+}
+.hero-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-size: clamp(1.5625rem, -1.1458rem + 10.8333vw, 5.625rem);
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  margin: 20px 0px;
+}
+
+h1::before {
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: black;
+  right: 20px;
+  left: 9px;
+  top: -5px;
+  z-index: -1;
+  -webkit-text-stroke: 1px greenyellow;
+  font-weight: 900;
+}
+.hero-content .main-content h3 {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+.hero-content .main-content p {
+  font-size: 17px;
+  width: 45%;
+  margin: 20px auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+#page2 {
+  width: 100%;
+  height: 100vh;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50vmax;
+  background-color: greenyellow;
+  position: fixed;
+  z-index: 999;
+}
+.cursor-b {
+  width: 50px;
+  height: 50px;
+  border-radius: 50vmax;
+  background-color: greenyellow;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 10px 10px 250px 100px rgba(172, 255, 47, 0.374);
+  filter: blur(50px);
+  transition: position 2s linear;
+}
+
+.infinite-mama {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.infinite {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+}
+
+.infinite {
+  animation: abid 30s linear infinite;
+}
+
+@keyframes abid {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.infinite h4 {
+  font-size: 150px;
+  display: inline-block;
+}
+.infinite-2 h4 {
+  font-size: 150px;
+  display: inline-block;
+}
